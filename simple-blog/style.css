@@ -1,0 +1,263 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   CSS Reset
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Style */
+body {
+    font: 16px/28px arial, sans-serif;
+    background-color: #eaeaea;
+    color: #333;
+    background-image: url(img/leaves.png);
+}
+
+.container {
+    width: 960px;
+    margin: auto;
+    background-color: #fff;
+}
+
+.header {
+    padding: 10px 20px;
+}
+
+.header h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.header a {
+    text-decoration: none;
+    color: salmon;
+    padding: 5px;
+}
+
+/* ketika link dihover */
+.header a:hover {
+    background-color: lightblue;
+    color: whitesmoke;
+}
+
+.banner {
+    height: 400px;
+    background-image: url(img/unsplash.jpg);
+    background-size: cover;
+    background-position: 0 -100px;
+    border-top: 5px solid lightcoral;
+    border-bottom: 5px solid gold;
+}
+
+.main {
+    padding: 20px;
+    width: 600px;
+    box-sizing: border-box;
+    float: left;
+    text-align: justify;
+}
+
+.main h2 {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.main .penulis {
+    font-size: 0.8em;
+    margin-top: -5px;
+}
+
+.main .penulis a {
+    text-decoration: none;
+    color: goldenrod
+}
+
+.main p {
+    margin-bottom: 1.1em;
+}
+
+.main .intro::first-letter {
+    font-size: 2rem;
+    color: brown;
+}
+
+.sidebar {
+    width: 300px;
+    float: right;
+    padding: 20px;
+}
+
+.sidebar h3 {
+    font-weight: bold;
+    color: aqua;
+}
+
+.sidebar img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    float: left;
+    padding-right: 10px;
+}
+
+.sidebar p {
+    font: 0.9em/1.1em arial;
+}
+
+.footer {
+    background-color: brown;
+    text-align: center;
+    font-size: 0.9em;
+    color: #eaeaea;
+    padding: 10px;
+}
+
+/* Membersihkan float (clearfix) */
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}

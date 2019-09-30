@@ -1,0 +1,103 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(img/leaves.png);
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #00ccff;
+    font-size: 1.5em;
+    height: 10%;
+    margin: auto;
+
+}
+
+.jumbotron {
+    width: 100%;
+    min-height: 150px;
+    padding: 40px 30px;
+    text-align: center;
+    color: white;
+    background-color: #aaa;
+    border-bottom: 10px solid lightgreen;
+
+}
+
+.jumbotron img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid lightblue;
+}
+
+.jumbotron p {
+    margin-top: -10px;
+    color: aqua;
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    min-height: 150px;
+    width: 100%;
+}
+
+.about p,
+.about h3 {
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.about p::first-letter {
+    font-size: 3em;
+    color: blue
+}
+
+.info p,
+.info h3,
+    {
+    padding-left: 20px;
+}
+
+
+.footer {
+    text-align: center;
+
+}
+
+
+.footer ul li {
+    display: inline;
+    padding-right: 50px;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+/*untuk layar device berukuran sedang*/
+@media screen and (min-width: 550px) {
+
+    .about,
+    .info {
+        width: 50%;
+    }
+}
+
+/*untuk layar device berukuran besar*/
+@media screen and (min-width: 800px) {
+    .container {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
